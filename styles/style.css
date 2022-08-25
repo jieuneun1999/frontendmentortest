@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root{
+    /* primary */
+    --darkcyan:hsl(158,
+        36%,
+        37%);
+    --cream:hsl(30, 38%, 92%);
+
+    /* neutral */
+
+    --verydark:hsl(212, 21%, 14%);
+    --darkgrayishblue:hsl(228, 12%, 48%);
+
+}
+
+body{
+    background: var(--cream);
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h3{
+    font-family: 'Fraunces', serif;
+}
+
+
+.area{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: white;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: .5rem;    
+}
+
+img{
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.details{
+    margin: 1.5rem;
+    padding: .5rem;
+}
+
+
+#product-type{
+    letter-spacing: .5rem;
+    color: var(--darkgrayishblue);
+    opacity: .7;
+}
+
+.title{
+    margin: 1rem 0;
+    color: var(--verydark);
+}
+
+.description{
+    color: var(--darkgrayishblue);
+    line-height: 1.5;
+    opacity: .7;
+}
+
+.price-container{
+    margin: 2rem 0;
+    display: flex;
+}
+
+.price1{
+    color: var(--darkcyan);
+    margin-right: 1rem;
+}
+
+.price2{
+    color: var(--darkgrayishblue);
+    display: flex;
+    font-size: .9rem;
+    align-items: center;
+    font-family: 'Montserrat',
+        sans-serif;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+
+.Add-to-cart{
+    width: 15rem;
+    height: 3rem;
+    background: var(--darkcyan);
+    color: white;
+    font-family: 'Montserrat',
+            sans-serif;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Add-to-cart:hover{
+    background: var(--verydark);
+}
